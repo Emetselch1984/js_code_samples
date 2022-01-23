@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>nodeValue</title>
+</head>
+<body>
+
+<p>今日は外でランチを食べました</p>
+
+<div id="blog">
+    <p>朝から外出していたのでランチは外で頂きました。</p>
+    <div>
+        <p>場所：港区南青山</p>
+        <p>店名：リストランテ南青山</p>
+    </div>
+</div>
+
+<button onClick="getElements();">要素を取得</button>
+
+<script>
+    function getElements(){
+        let elements = document.getElementsByTagName('p');
+        let len = elements.length;
+        for (let i = 0; i < len; i++){
+            console.log(elements.item(i).firstChild.nodeValue);
+        }
+    }
+</script>
+</body>
+</html>

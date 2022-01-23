@@ -19,3 +19,12 @@ function getElements() {
         console.log(echildren.item(i).textContent);
     }
 }
+function getElements(){
+    let elements = document.querySelectorAll("#blog div p");
+    let len = elements.length;
+    for (let i = 0; i < len; i++){
+        let value = elements.item(i).firstChild.nodeValue;
+        elements.item(i).firstChild.nodeValue = '【'+ value +'】'
+    }
+
+}
