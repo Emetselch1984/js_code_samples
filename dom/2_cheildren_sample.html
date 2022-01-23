@@ -5,7 +5,7 @@
     <title>childNodes</title>
 </head>
 <body>
-<h1>子ノードを全て取得</h1>
+<h1>子ノードの要素ノードのみを取得</h1>
 <p>今日は外でランチを食べました</p>
 
 <div id="box">
@@ -18,13 +18,13 @@
 <script>
     function getElements(){
         let element = document.getElementById('box');
-        let children = element.childNodes;
+        let echildren = element.children;
 
-        let len = children.length;
-        console.log("ノード数:" + len);
+        let len = echildren.length;
+        console.log("要素数:" + len);
 
         for (let i = 0; i < len; i++){
-            console.log(children.item(i).nodeName);
+            console.log(echildren.item(i).textContent);
         }
     }
 </script>
