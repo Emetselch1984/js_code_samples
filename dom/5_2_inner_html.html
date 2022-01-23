@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML</title>
+</head>
+<body>
+
+<p>今日は外でランチを食べました。</p>
+
+<div id="shopinfo">
+    リストランテ南青山
+</div>
+
+<p>美味しかったです。</p>
+
+<button onClick="setTextToElement();">新しいテキストを設定</button>
+
+<script>
+    function setTextToElement(){
+        let element = document.getElementById('shopinfo');
+        element.innerHTML = '南青山の<b>洋食屋</b>さん';
+    }
+</script>
+</body>
+</html>
+
