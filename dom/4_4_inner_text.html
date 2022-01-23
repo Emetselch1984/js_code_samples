@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>innerText</title>
+</head>
+<body>
+
+<p>
+    今日は外でランチを食べました。
+    <span style="display:none">少し値段高かったかな。</span>
+</p>
+
+<button onClick="getElement();">要素を取得</button>
+
+<script>
+    function getElement(){
+        let elements = document.getElementsByTagName('body');
+        console.log('-- ここから --');
+        console.log(elements[0].innerText);
+        console.log('-- ここまで --');
+    }
+</script>
+</body>
+</html>

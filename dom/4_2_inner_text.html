@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>innerText</title>
+</head>
+<body>
+
+<p>今日は外でランチを食べました。</p>
+
+<div id="shopinfo">
+    リストランテ南青山
+    <div>
+        <p>東京都港区<br>南青山</p>
+        <p>洋食</p>
+    </div>
+</div>
+
+<p>美味しかったです。</p>
+
+<button onClick="getElement();">要素を取得</button>
+
+<script>
+    function getElement(){
+        let element = document.getElementById('shopinfo');
+        console.log('-- ここから --');
+        console.log(element.innerText);
+        console.log('-- ここまで --');
+    }
+</script>
+</body>
+</html>
